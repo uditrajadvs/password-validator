@@ -1,0 +1,100 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.container {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 80%;
+}
+
+h2,
+form {
+  margin-bottom: 8px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  /* gap: 8px; */
+}
+
+input[type="password"],
+button {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  outline: 1px solid gray;
+  font-size: 1.5rem;
+}
+
+input[type="password"] {
+  flex-grow: 2;
+}
+
+fieldset {
+  border: none;
+  padding: 8px;
+  margin-top: 24px;
+}
+
+ul,
+legend {
+  text-transform: uppercase;
+}
+legend {
+  font-weight: bold;
+}
+ul {
+  list-style: none;
+}
+li {
+  margin-top: 8px;
+}
+
+.result {
+  text-align: center;
+  visibility: hidden;
+  margin-top: 24px;
+  padding: 12px;
+  font-size: 1.5rem;
+}
+.red-line {
+  text-decoration: underline;
+  color: indianred;
+}
+.red-line > span{
+  visibility: hidden;
+}
+
+.green-line {
+  visibility: visible;
+  text-decoration: underline;
+  color: forestgreen;
+}
+
+
+.valid{
+  background-color: forestgreen;
+  visibility: visible;
+}
+.invalid{
+  background-color: red;
+  visibility: visible;
+}

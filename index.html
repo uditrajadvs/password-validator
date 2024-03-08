@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Validator</title>
+  <link rel="stylesheet" href="site.css" />
+</head>
+
+<body>
+  <main class="container">
+    <h2>Password validator</h2>
+    <span id="varified"></span>
+    <form>
+      <input type="password" placeholder="Type your password" id="password" name="password"
+        onkeyup="PasswordValidator(this.value)" />
+      <button class="btn" type="button" id="validate" onclick="check()">Validate</button>
+    </form>
+    <fieldset>
+      <legend>Constraints</legend>
+      <ul>
+        <li id="rule1" class="red-line">
+          <span class="checkmark">&#10004;</span>Password must be atleast 8 character in length.
+        </li>
+        <li id="rule2" class="red-line">
+          <span class="checkmark">&#10004;</span>Password must have atleast one uppercase character.
+        </li>
+        <li id="rule3" class="red-line">
+          <span class="checkmark">&#10004;</span>Password must have atleast one lowercase character.
+        </li>
+        <li id="rule4" class="red-line">
+          <span class="checkmark">&#10004;</span>Password must have one number.
+        </li>
+        <li id="rule5" class="red-line">
+          <span class="checkmark">&#10004;</span> Password must have one special character.
+        </li>
+      </ul>
+    </fieldset>
+    <div class="result" id="alertbox">
+    
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
